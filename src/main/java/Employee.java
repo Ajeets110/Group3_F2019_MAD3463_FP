@@ -13,6 +13,8 @@ public abstract class Employee implements IPrintable{
     private String name = "";
     private int age;
     double earnings;
+    int birthYear = 0 ;
+
 
     //M e t h o d s    d e c l a r a t i o n
 
@@ -20,17 +22,16 @@ public abstract class Employee implements IPrintable{
 
         Date date = new Date();
         int currYear = Calendar.getInstance().get(Calendar.YEAR);
-        int birthyear = 0 ;
         if(age == 0)
         {
             System.out.println("Age not found!");
         }
         else{
-            birthyear += currYear - age;
+            birthYear += currYear - age;
             //System.out.println("Birth year of " +name + " is " +birthyear);   //Displaying to check result
         }
 
-        return birthyear;
+        return birthYear;
     }
 
     int calcEarnings(){
@@ -38,11 +39,15 @@ public abstract class Employee implements IPrintable{
         return 1000;
     }
 
+
+    //O v e r r i d i n g
     @Override
     public void printMyData()
     {
-        System.out.println("Name of the employee is " + name + " and his age is " + age);
-        System.out.println("Salary of " + name + " is " + earnings);
+        System.out.println("Name       : " + name);
+        System.out.println("Age        : " + age);
+        System.out.println("Birth Year : " + birthYear) ;
+        System.out.println("Salary     : " + earnings);
     }
 
 }
