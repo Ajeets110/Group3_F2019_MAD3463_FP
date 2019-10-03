@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 
-public class Employee {
+public abstract class Employee {
 
     //V a r i a b l e s    d e c l a r a t i o n
 
@@ -30,6 +30,12 @@ public class Employee {
         }
 
         return birthyear;
+    }
+
+    int calcEarnings(){
+
+
+        return 1000;
     }
 
 
