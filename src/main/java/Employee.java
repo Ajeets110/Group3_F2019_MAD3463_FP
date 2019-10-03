@@ -1,7 +1,3 @@
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -34,9 +30,9 @@ public abstract class Employee implements IPrintable{
         return birthYear;
     }
 
-    int calcEarnings(){
+     Double calcEarnings(){
 
-        return 1000;
+        return 1000.00;
     }
 
 

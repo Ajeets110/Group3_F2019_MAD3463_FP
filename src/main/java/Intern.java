@@ -16,9 +16,10 @@ public class Intern extends Employee implements IPrintable {
 
     //O v e r r i d i n g
     @Override
-
     public void printMyData()
     {
+        super.printMyData();
+        System.out.println("Employee is an Intern");
         System.out.println("School Name  :" + schoolName);
     }
 
