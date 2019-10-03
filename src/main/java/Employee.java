@@ -50,4 +50,30 @@ public abstract class Employee implements IPrintable{
         System.out.println("Salary     : " + earnings);
     }
 
+    //A d d e d   G e t t  e r   a n d   S e t t e r
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getEarnings() {
+        return earnings;
+    }
+
+    public void setEarnings(double earnings) {
+        this.earnings = earnings;
+    }
 }
