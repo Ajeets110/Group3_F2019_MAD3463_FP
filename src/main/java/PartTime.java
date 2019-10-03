@@ -4,5 +4,22 @@ public abstract class PartTime extends Employee implements IPrintable{
 
     private double rate;
     private float hoursWorked;
+
+    //G e t t e r   a n d   S e t t e r
     
+    public double getRate() {
+        return rate;
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
+    public float getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(float hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
 }
