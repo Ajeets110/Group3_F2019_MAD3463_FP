@@ -5,6 +5,13 @@ public class Intern extends Employee implements IPrintable {
     private String schoolName;
 
 
+    //O v e r r i d i n g 
+    @Override
+
+    public void printMyData()
+    {
+        System.out.println("School Name  :" + schoolName);
+    }
 
 
 }
