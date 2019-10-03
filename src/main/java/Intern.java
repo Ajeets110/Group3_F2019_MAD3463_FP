@@ -4,8 +4,17 @@ public class Intern extends Employee implements IPrintable {
 
     private String schoolName;
 
+    //G e t t e r   a n d    S e t t e r
+    
+    public String getSchoolName() {
+        return schoolName;
+    }
 
-    //O v e r r i d i n g 
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
+    }
+
+    //O v e r r i d i n g
     @Override
 
     public void printMyData()
