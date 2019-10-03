@@ -19,16 +19,17 @@ public class Employee {
 
         Date date = new Date();
         int currYear = Calendar.getInstance().get(Calendar.YEAR);
+        int birthyear = 0 ;
         if(age == 0)
         {
             System.out.println("Age not found!");
         }
         else{
-            int birthyear = currYear - age;
-            System.out.println("Birth year of " +name + " is " +birthyear);
+            birthyear += currYear - age;
+            //System.out.println("Birth year of " +name + " is " +birthyear);   //Displaying to check result
         }
 
-        return 0;
+        return birthyear;
     }
 
 
