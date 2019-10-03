@@ -15,18 +15,21 @@ public class Employee {
 
     //M e t h o d s    d e c l a r a t i o n
 
-    int calcBirthYear(){
+    int calcBirthYear() {
 
         Date date = new Date();
-        int year = Calendar.getInstance().get(Calendar.YEAR);
-        System.out.println(year);
-        //if ((birthDate != null) && (currentDate != null)) {
-          //  return Period.between(birthDate, currentDate).getYears();
-        //} else {
+        int currYear = Calendar.getInstance().get(Calendar.YEAR);
+        if(age == 0)
+        {
+            System.out.println("Age not found!");
+        }
+        else{
+            int birthyear = currYear - age;
+            System.out.println("Birth year of " +name + " is " +birthyear);
+        }
 
         return 0;
     }
-
 
 
 }
