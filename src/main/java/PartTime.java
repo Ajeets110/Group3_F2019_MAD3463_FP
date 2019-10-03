@@ -22,4 +22,11 @@ public abstract class PartTime extends Employee implements IPrintable{
     public void setHoursWorked(float hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
+
+    @Override
+    public void printMyData()
+    {
+        System.out.println("Rate           : " + rate);
+        System.out.println("Hours Worked   : " + hoursWorked);
+    }
 }
