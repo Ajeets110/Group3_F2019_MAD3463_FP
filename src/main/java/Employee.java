@@ -6,12 +6,13 @@ import java.util.Calendar;
 import java.util.Date;
 
 
-public abstract class Employee {
+public abstract class Employee implements IPrintable{
 
     //V a r i a b l e s    d e c l a r a t i o n
 
     private String name = "";
     private int age;
+    double earnings;
 
     //M e t h o d s    d e c l a r a t i o n
 
@@ -34,9 +35,14 @@ public abstract class Employee {
 
     int calcEarnings(){
 
-
         return 1000;
     }
 
+    @Override
+    public void printMyData()
+    {
+        System.out.println("Name of the employee is " + name + " and his age is " + age);
+        System.out.println("Salary of " + name + " is " + earnings);
+    }
 
 }
