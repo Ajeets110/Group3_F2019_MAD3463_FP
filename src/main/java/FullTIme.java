@@ -1,3 +1,3 @@
-public class FullTIme {
-    
+public class FullTIme extends Employee{
+
 }
