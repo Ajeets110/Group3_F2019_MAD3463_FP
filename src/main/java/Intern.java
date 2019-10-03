@@ -5,7 +5,7 @@ public class Intern extends Employee implements IPrintable {
     private String schoolName;
 
     //G e t t e r   a n d    S e t t e r
-    
+
     public String getSchoolName() {
         return schoolName;
     }
