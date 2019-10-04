@@ -31,7 +31,7 @@ public abstract class Employee implements IPrintable{
     }
 
      Double calcEarnings(){
-
+        setEarnings(1000.00);
         return 1000.00;
     }
 

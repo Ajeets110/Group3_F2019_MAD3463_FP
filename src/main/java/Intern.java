@@ -1,4 +1,4 @@
-public class Intern extends Employee implements IPrintable {
+public class Intern<set> extends Employee implements IPrintable {
 
     //V a r i a b l e    D e c l a r a t  i o  n
 
@@ -14,6 +14,7 @@ public class Intern extends Employee implements IPrintable {
         this.schoolName = schoolName;
     }
 
+
     //O v e r r i d i n g
     @Override
     public void printMyData()
@@ -21,6 +22,7 @@ public class Intern extends Employee implements IPrintable {
         super.printMyData();
         System.out.println("Employee is an Intern");
         System.out.println("School Name  :" + schoolName);
+        System.out.println("Salary       : " + super.getEarnings() );
     }
 
 
