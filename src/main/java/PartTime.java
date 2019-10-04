@@ -23,6 +23,8 @@ public abstract class PartTime extends Employee implements IPrintable{
         this.hoursWorked = hoursWorked;
     }
 
+
+
     @Override
     public void printMyData()
     {

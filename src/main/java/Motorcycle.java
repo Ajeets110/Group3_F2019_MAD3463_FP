@@ -1,14 +1,21 @@
 public class Motorcycle extends Vehicle implements IPrintable {
     // Motorcycle's Additional variable
-    private String Brand;
+    private String brand;
     private double price;
 
+    public Motorcycle(int make, String plate, String brand, double price) {
+        super.setMake(make);
+        super.setPlate(plate);
+        this.brand = brand;
+        this.price = price;
+    }
+
     public String getBrand() {
-        return Brand;
+        return brand;
     }
 
     public void setBrand(String brand) {
-        Brand = brand;
+        brand = brand;
     }
 
     public double getPrice() {
@@ -21,9 +28,9 @@ public class Motorcycle extends Vehicle implements IPrintable {
 
     @Override
     public void printMyData() {
-        System.out.println("Make       : " + Make);
-        System.out.println("Plate        : " + Plate);
-        System.out.println("Brand : " + Brand);
+        System.out.println("Make       : " + super.getMake());
+        System.out.println("Plate        : " + super.getMake());
+        System.out.println("Brand : " + brand);
         System.out.println("Price    : " + price);
     }
 }

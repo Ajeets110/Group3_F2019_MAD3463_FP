@@ -21,6 +21,69 @@ public class FullTIme extends Employee implements IPrintable{
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
+    public int getMake() {
+        return make;
+    }
+
+    public void setMake(int make) {
+        this.make = make;
+    }
+
+    public String getPlate() {
+        return plate;
+    }
+
+    public void setPlate(String plate) {
+        this.plate = plate;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public byte getSeats() {
+        return seats;
+    }
+
+    public void setSeats(byte seats) {
+        this.seats = seats;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public Motorcycle getMot() {
+        return mot;
+    }
+
+    public void setMot(Motorcycle mot) {
+        this.mot = mot;
+    }
 
     // O v e r w r i t i n g    m e t h o d   o f   p a r e n t   c l a s s
 
@@ -31,6 +94,10 @@ public class FullTIme extends Employee implements IPrintable{
 
     }
 
+
+
+
+
     @Override
     public void printMyData() {
         super.printMyData();
@@ -39,4 +106,24 @@ public class FullTIme extends Employee implements IPrintable{
         System.out.println("Bonus      : " +bonus);
         System.out.println("Earnings   : " +getEarnings());
     }
+
+
+    int make;
+    String plate;
+    String color;
+    byte seats;
+    String brand;
+    double price;
+
+
+
+    Car car = new Car(make, plate, color, seats);
+        Motorcycle mot = new Motorcycle(make, plate, brand, price);
+
+        void print(){
+            if(car.getColor() != null){
+                System.out.println("Employee has a car");
+                car.printMyData();
+            }
+        }
 }

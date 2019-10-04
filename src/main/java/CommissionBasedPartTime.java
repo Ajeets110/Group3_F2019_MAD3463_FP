@@ -13,6 +13,10 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable{
         this.commissionPerc = commissionPerc;
     }
 
+    void vehicle(){
+        Car car1;
+    }
+
     @Override
      Double calcEarnings() {
 
@@ -28,4 +32,5 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable{
         System.out.println("Commission Percentage  : " + commissionPerc);
         System.out.println("Earnings       : " + finalSalary);
     }
+
 }
