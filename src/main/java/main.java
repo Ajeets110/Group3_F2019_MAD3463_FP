@@ -13,6 +13,10 @@ public class main {
        i1.calcEarnings();
        i1.printMyData(); **/
 
-       FullTIme f1 = new FullTIme();
+       /** FullTIme f1 = new FullTIme();
+       f1.setSalary(85000);
+       f1.setBonus(5000);
+       f1.calcEarnings();
+       f1.printMyData(); **/
     }
 }
