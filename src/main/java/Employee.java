@@ -8,8 +8,8 @@ public abstract class Employee implements IPrintable{
 
     private String name = "";
     private int age;
-    double earnings;
-    int birthYear = 0 ;
+    private double earnings;
+    private int birthYear = 0 ;
 
 
     //M e t h o d s    d e c l a r a t i o n
