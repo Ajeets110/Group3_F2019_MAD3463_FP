@@ -1,4 +1,4 @@
-public abstract class Vehicle implements IPrintable {
+public abstract class Vehicle  {
 
 
 
