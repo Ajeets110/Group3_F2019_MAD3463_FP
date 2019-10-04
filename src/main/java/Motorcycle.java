@@ -1,7 +1,7 @@
 public class Motorcycle extends Vehicle implements IPrintable {
     // Motorcycle's Additional variable
-    String Brand;
-    enum Look{
+    private String Brand;
+   private enum Look{
         Muscular,
         Standard,
         Racing
