@@ -1,5 +1,6 @@
 public class Car extends Vehicle implements IPrintable {
-    String  Color;
+// Car's Additional Variable
+String  Color;
 
 
 
