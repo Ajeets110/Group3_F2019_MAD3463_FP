@@ -13,5 +13,6 @@ public class main {
        i1.calcEarnings();
        i1.printMyData(); **/
 
+       FullTIme f1 = new FullTIme();
     }
 }
