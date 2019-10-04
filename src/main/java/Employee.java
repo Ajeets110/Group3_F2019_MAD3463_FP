@@ -43,7 +43,6 @@ public abstract class Employee implements IPrintable{
         System.out.println("Name       : " + name);
         System.out.println("Age        : " + age);
         System.out.println("Birth Year : " + birthYear) ;
-        System.out.println("Salary     : " + earnings);
     }
 
     //A d d e d   G e t t  e r   a n d   S e t t e r

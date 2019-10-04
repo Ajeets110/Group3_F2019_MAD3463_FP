@@ -1,7 +1,11 @@
 public class main {
 
     public static void main(String[] args) {
-        Employee e1 = new Employee();
-        e1.calcBirthYear();
+        CommissionBasedPartTime c1 = new CommissionBasedPartTime();
+        c1.setRate(10.00);
+        c1.setHoursWorked(5);
+        c1.setCommissionPerc(10);
+        c1.calcEarnings();
+        c1.printMyData();
     }
 }

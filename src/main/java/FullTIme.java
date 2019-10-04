@@ -8,8 +8,8 @@ public class FullTIme extends Employee implements IPrintable{
 
     Double calcEarnings() {
 
-        super.earnings = salary + bonus;
-        return super.earnings;
+        super.setEarnings(salary + bonus);
+        return super.getEarnings();
 
     }
 
