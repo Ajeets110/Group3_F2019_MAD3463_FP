@@ -1,7 +1,7 @@
 public abstract class Vehicle implements IPrintable {
     // Variable Declaration
-    private int Make;
-   private String Plate;
+    int Make;
+    String Plate;
 
    // Getters And Setters
     public int getMake() {
