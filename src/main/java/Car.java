@@ -26,7 +26,7 @@ private byte NumberOfSeats;
     public void printMyData() {
         System.out.println("Make       : " + Make);
         System.out.println("Plate        : " + Plate);
-        System.out.println("Color : " +Color );
+        System.out.println("Color : " + Color );
         System.out.println("Number Of Seats    : " + NumberOfSeats);
     }
 
