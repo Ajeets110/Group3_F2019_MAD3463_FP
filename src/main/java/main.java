@@ -3,12 +3,6 @@ public class main {
     public static void main(String[] args) {
 
 
-
-       /** Intern i1 = new Intern();
-       i1.setSchoolName("abc");
-       i1.calcEarnings();
-       i1.printMyData(); **/
-
        FullTIme f1 = new FullTIme();
        f1.setName("Skrillex");
        f1.setAge(25);
@@ -49,6 +43,28 @@ public class main {
        i1.calcEarnings();
        i1.printMyData();
 
+       CommissionBasedPartTime c1 = new CommissionBasedPartTime();
+       c1.setName("French Montana");
+       c1.setAge(28);
+       c1.setRate(30);
+       c1.setHoursWorked(45);
+       c1.setCommissionPerc(20);
+       c1.setMotorcycle(2015, "VGC1","Harley Davidson", 45000);
+       c1.calcEarnings();
+       c1.calcBirthYear();
+       c1.printMyData();
 
+       CommissionBasedPartTime c2 = new CommissionBasedPartTime();
+       c2.setName("G-Eazy");
+       c2.setAge(27);
+       c2.setRate(80);
+       c2.setHoursWorked(40);
+       c2.setCommissionPerc(30);
+       c2.setCar(2018, "CDC1","Bentley", 65000);
+       c2.calcEarnings();
+       c2.calcBirthYear();
+       c2.printMyData();
+
+       
     }
 }
