@@ -1,12 +1,7 @@
 public class main {
 
     public static void main(String[] args) {
-        CommissionBasedPartTime c1 = new CommissionBasedPartTime();
-        c1.setRate(10.00);
-        c1.setHoursWorked(5);
-        c1.setCommissionPerc(10);
-        c1.calcEarnings();
-        c1.printMyData();
+
 
 
        /** Intern i1 = new Intern();
@@ -14,10 +9,14 @@ public class main {
        i1.calcEarnings();
        i1.printMyData(); **/
 
-       /** FullTIme f1 = new FullTIme();
+       FullTIme f1 = new FullTIme();
        f1.setSalary(85000);
        f1.setBonus(5000);
        f1.calcEarnings();
-       f1.printMyData(); **/
+       f1.setMake(2019);
+       f1.setPlate("BGN541");
+       f1.setColor("Red");
+       f1.setSeats((byte) 4);
+       f1.printMyData();
     }
 }

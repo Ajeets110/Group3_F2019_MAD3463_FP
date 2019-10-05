@@ -4,6 +4,17 @@ public class FullTIme extends Employee implements IPrintable{
     private double salary;
     private double bonus;
 
+    int make;
+    String plate;
+    String color;
+    byte seats;
+    String brand;
+    double price;
+
+
+
+    Motorcycle mot = new Motorcycle(make, plate, brand, price);
+
     //G e t t e r    a n d   S e t t e r
 
     public double getSalary() {
@@ -73,9 +84,13 @@ public class FullTIme extends Employee implements IPrintable{
         return car;
     }
 
-    public void setCar(Car car) {
-        this.car = car;
-    }
+   /** public void setCar(int mak, String plat, String colo, byte seat) {
+        this.make = mak;
+        this.plate = plat;
+        this.color = colo;
+        this.seats = seat;
+    }**/
+
 
     public Motorcycle getMot() {
         return mot;
@@ -93,37 +108,21 @@ public class FullTIme extends Employee implements IPrintable{
         return super.getEarnings();
 
     }
-
-
-
-
+    Car car = new Car(make, plate, color, seats);
 
     @Override
+
+
     public void printMyData() {
         super.printMyData();
         System.out.println("Employee is a Full Time Employee");
         System.out.println("Base Salary: " +salary);
         System.out.println("Bonus      : " +bonus);
         System.out.println("Earnings   : " +getEarnings());
-    }
-
-
-    int make;
-    String plate;
-    String color;
-    byte seats;
-    String brand;
-    double price;
-
-
-
-    Car car = new Car(make, plate, color, seats);
-        Motorcycle mot = new Motorcycle(make, plate, brand, price);
-
-        void print(){
-            if(car.getColor() != null){
-                System.out.println("Employee has a car");
-                car.printMyData();
-            }
+        if(car.getPlate() == null) {
+            System.out.println("Employee has a car");
+            car.printMyData();
         }
+
+    }
 }
