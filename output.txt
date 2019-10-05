@@ -1,0 +1,104 @@
+Name       : Skrillex
+Age        : 25
+Birth Year : 1994
+Employee is a Full Time Employee
+Base Salary       : 85000.0
+Bonus             : 5000.0
+Earnings          : 90000.0
+Employee has a car
+Make               : 2019
+Plate              : ABD512
+Color              : Blue
+Number Of Seats    : 4
+=========================
+Name       : Martin Garrix
+Age        : 22
+Birth Year : 1997
+Employee is a Full Time Employee
+Base Salary       : 852000.0
+Bonus             : 50000.0
+Earnings          : 902000.0
+Employee has a motorcycle
+Make         : 2019
+Plate        : ABD512
+Brand        : Blue
+Price        : 4.0
+=========================
+Name       : Hardwell
+Age        : 62
+Birth Year : 1957
+Employee is an Intern
+School Name        :Lambton College
+Salary             : 1000.0
+Employee has a motorcycle
+Make         : 2019
+Plate        : BGV51
+Brand        : Repsol
+Price        : 50000.0
+=========================
+Name       : Cardi B
+Age        : 26
+Birth Year : 3950
+Employee is an Intern
+School Name        :Hoods
+Salary             : 1000.0
+Employee has a car
+Make               : 2018
+Plate              : BGV52
+Color              : Black
+Number Of Seats    : 4
+=========================
+Name       : French Montana
+Age        : 28
+Birth Year : 1991
+Employee is Part Time / Commissioned
+Rate              : 30.0
+Hours Worked      : 45.0
+Commission Percentage  : 20.0
+Earnings               : 1620.0
+Employee has a motorcycle
+Make         : 2015
+Plate        : VGC1
+Brand        : Harley Davidson
+Price        : 45000.0
+=========================
+Name       : G-Eazy
+Age        : 27
+Birth Year : 1992
+Employee is Part Time / Commissioned
+Rate              : 80.0
+Hours Worked      : 40.0
+Commission Percentage  : 30.0
+Earnings               : 4160.0
+Employee has a car
+Make               : 2018
+Plate              : CDC1
+Color              : Bentley
+Number Of Seats    : 65000
+=========================
+Name       : Shaktimaan
+Age        : 68
+Birth Year : 1951
+Employee is Part Time / Commissioned
+Rate              : 80.0
+Hours Worked      : 40.0
+Earnings           : 3450.0
+Employee has a car
+Make               : 2015
+Plate              : DCC524
+Color              : Pink
+Number Of Seats    : 2
+=========================
+Name       : 
+Age        : 52
+Birth Year : 1967
+Employee is Part Time / Commissioned
+Rate              : 13.0
+Hours Worked      : 10.0
+Earnings           : 2630.0
+Employee has a car
+Make               : 2015
+Plate              : SDE540
+Color              : Magenta
+Number Of Seats    : 3
+=========================
