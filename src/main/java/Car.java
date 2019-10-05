@@ -35,8 +35,10 @@ String plate;
 
     @Override
     public void printMyData() {
-        System.out.println("Make               : " + make);
-        System.out.println("Plate              : " + plate);
+        super.setMake(make);
+        super.setPlate(plate);
+        System.out.println("Make               : " + super.getMake());
+        System.out.println("Plate              : " + super.getPlate());
         System.out.println("Color              : " + color );
         System.out.println("Number Of Seats    : " + NumberOfSeats);
     }

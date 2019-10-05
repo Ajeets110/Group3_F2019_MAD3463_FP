@@ -29,7 +29,7 @@ public class Motorcycle extends Vehicle implements IPrintable {
     @Override
     public void printMyData() {
         System.out.println("Make         : " + super.getMake());
-        System.out.println("Plate        : " + super.getMake());
+        System.out.println("Plate        : " + super.getPlate());
         System.out.println("Brand        : " + brand);
         System.out.println("Price        : " + price);
     }

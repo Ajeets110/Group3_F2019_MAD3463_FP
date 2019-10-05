@@ -31,6 +31,24 @@ public class main {
        f2.setMotorcycle(2019, "ABD512", "Blue", 4);
        f2.printMyData();
 
-       
+      Intern i1 = new Intern();
+      i1.setMotorcycle(2019, "BGV51", "Repsol", 50000);
+      i1.setName("Hardwell");
+      i1.setAge(62);
+      i1.setSchoolName("Lambton College");
+      i1.calcBirthYear();
+      i1.calcEarnings();
+      i1.printMyData();
+
+       Intern i2 = new Intern();
+       i1.setCar(2018, "BGV52", "Black", 4);
+       i1.setName("Cardi B");
+       i1.setAge(26);
+       i1.setSchoolName("Hoods");
+       i1.calcBirthYear();
+       i1.calcEarnings();
+       i1.printMyData();
+
+
     }
 }
