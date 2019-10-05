@@ -109,6 +109,9 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable{
             motorcycle.printMyData();
             System.out.println("=========================");
         }
+        else{
+            System.out.println("No Vehicle");
+        }
     }
 
 }

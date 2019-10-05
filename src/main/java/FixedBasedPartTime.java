@@ -103,5 +103,8 @@ private double FixedAmount;
             motorcycle.printMyData();
             System.out.println("=========================");
         }
+        else{
+            System.out.println("No Vehicle");
+        }
     }
 }

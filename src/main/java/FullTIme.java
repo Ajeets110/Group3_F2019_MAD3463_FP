@@ -129,5 +129,8 @@ public class FullTIme extends Employee implements IPrintable{
             motorcycle.printMyData();
             System.out.println("=========================");
         }
+        else{
+            System.out.println("No Vehicle");
+        }
     }
 }
