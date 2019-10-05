@@ -1,3 +1,5 @@
+import java.nio.channels.FileChannel;
+
 public class main {
 
     public static void main(String[] args) {
@@ -65,6 +67,27 @@ public class main {
        c2.calcBirthYear();
        c2.printMyData();
 
-       
+       FixedBasedPartTime b1 = new FixedBasedPartTime();
+       b1.setName("Shaktimaan");
+       b1.setAge(68);
+       b1.setRate(80);
+       b1.setHoursWorked(40);
+       b1.setFixedAmount(250.00);
+       b1.calcBirthYear();
+       b1.calcEarnings();
+       b1.setCar(2015,"DCC524", "Pink", 2);
+       b1.printMyData();
+
+       FixedBasedPartTime b2 = new FixedBasedPartTime();
+
+       b2.setAge(52);
+       b2.setRate(13);
+       b2.setHoursWorked(10);
+       b2.setFixedAmount(2500.00);
+       b2.calcBirthYear();
+       b2.calcEarnings();
+       b2.setCar(2015,"SDE540", "Magenta", 3);
+       b2.printMyData();
+
     }
 }
