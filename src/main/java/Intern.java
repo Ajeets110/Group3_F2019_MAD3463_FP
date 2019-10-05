@@ -3,12 +3,12 @@ public class Intern<set> extends Employee implements IPrintable {
     //V a r i a b l e    D e c l a r a t  i o  n
 
     private String schoolName;
-    int make;
-    String plate;
-    String color;
-    int seats;
-    String brand;
-    double price;
+    private int make;
+    private String plate;
+    private String color;
+    private int seats;
+    private String brand;
+    private double price;
 
     //G e t t e r   a n d    S e t t e r
 
@@ -89,8 +89,8 @@ public class Intern<set> extends Employee implements IPrintable {
     {
         super.printMyData();
         System.out.println("Employee is an Intern");
-        System.out.println("School Name  :" + schoolName);
-        System.out.println("Salary       : " + super.getEarnings() );
+        System.out.println("School Name        :" + schoolName);
+        System.out.println("Salary             : " + super.getEarnings() );
         Motorcycle motorcycle = new Motorcycle(make, plate, brand, price);
         Car car = new Car(make, plate, color, seats);
         if(car.getColor()!=null) {

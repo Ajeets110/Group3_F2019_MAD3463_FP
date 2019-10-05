@@ -3,12 +3,12 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable{
     private double commissionPerc;
     private double finalSalary;
     private double commission;
-    int make;
-    String plate;
-    String color;
-    int seats;
-    String brand;
-    double price;
+    private int make;
+    private String plate;
+    private String color;
+    private int seats;
+    private String brand;
+    private double price;
 
     // S e t t e  r   a n d    G e t t  e r
 
@@ -95,7 +95,7 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable{
     public void printMyData() {
         super.printMyData();
         System.out.println("Commission Percentage  : " + commissionPerc);
-        System.out.println("Earnings       : " + finalSalary);
+        System.out.println("Earnings               : " + finalSalary);
         Motorcycle motorcycle = new Motorcycle(make, plate, brand, price);
         Car car = new Car(make, plate, color, seats);
         if(car.getColor()!=null) {

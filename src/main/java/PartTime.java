@@ -30,7 +30,7 @@ public abstract class PartTime extends Employee implements IPrintable{
     {
         super.printMyData();
         System.out.println("Employee is Part Time / Commissioned");
-        System.out.println("Rate           : " + rate);
-        System.out.println("Hours Worked   : " + hoursWorked);
+        System.out.println("Rate              : " + rate);
+        System.out.println("Hours Worked      : " + hoursWorked);
     }
 }

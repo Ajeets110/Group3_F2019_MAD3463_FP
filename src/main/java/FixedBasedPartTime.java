@@ -1,11 +1,11 @@
 public class FixedBasedPartTime extends PartTime implements IPrintable {
 private double FixedAmount;
-    int make;
-    String plate;
-    String color;
-    int seats;
-    String brand;
-    double price;
+    private int make;
+    private String plate;
+    private String color;
+    private int seats;
+    private String brand;
+    private double price;
 
     public double getFixedAmount() {
         return FixedAmount;

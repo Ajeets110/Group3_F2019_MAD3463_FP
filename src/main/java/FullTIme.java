@@ -4,12 +4,12 @@ public class FullTIme extends Employee implements IPrintable{
     private double salary;
     private double bonus;
 
-    int make;
-    String plate;
-    String color;
-    int seats;
-    String brand;
-    double price;
+    private int make;
+    private String plate;
+    private String color;
+    private int seats;
+    private String brand;
+    private double price;
 
 
     //Motorcycle mot = new Motorcycle(make, plate, brand, price);
@@ -113,9 +113,9 @@ public class FullTIme extends Employee implements IPrintable{
         super.printMyData();
 
         System.out.println("Employee is a Full Time Employee");
-        System.out.println("Base Salary: " +salary);
-        System.out.println("Bonus      : " +bonus);
-        System.out.println("Earnings   : " +getEarnings());
+        System.out.println("Base Salary       : " +salary);
+        System.out.println("Bonus             : " +bonus);
+        System.out.println("Earnings          : " +getEarnings());
         Motorcycle motorcycle = new Motorcycle(make, plate, brand, price);
         Car car = new Car(make, plate, color, seats);
         if(car.getColor()!=null) {

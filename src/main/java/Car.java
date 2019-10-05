@@ -4,8 +4,8 @@ public class Car extends Vehicle implements IPrintable {
 
 private String  color;
 private int NumberOfSeats;
-int make;
-String plate;
+    private int make;
+    private String plate;
 
     public Car(int make, String plate, String color, int numberOfSeat) {
         this.make = make;
