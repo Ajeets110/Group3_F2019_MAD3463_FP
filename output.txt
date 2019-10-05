@@ -76,7 +76,7 @@ Plate              : CDC1
 Color              : Bentley
 Number Of Seats    : 65000
 =========================
-Name       : Shaktimaan
+Name       : Pritesh Patel
 Age        : 68
 Birth Year : 1951
 Employee is Part Time / Commissioned

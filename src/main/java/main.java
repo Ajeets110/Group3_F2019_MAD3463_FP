@@ -77,7 +77,7 @@ public class main {
         c2.printMyData();
 
         FixedBasedPartTime b1 = new FixedBasedPartTime();
-        b1.setName("Shaktimaan");
+        b1.setName("Pritesh Patel");
         b1.setAge(68);
         b1.setRate(80);
         b1.setHoursWorked(40);
