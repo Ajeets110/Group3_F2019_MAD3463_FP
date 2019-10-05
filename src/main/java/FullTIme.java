@@ -7,13 +7,12 @@ public class FullTIme extends Employee implements IPrintable{
     int make;
     String plate;
     String color;
-    byte seats;
+    int seats;
     String brand;
     double price;
 
 
-
-    Motorcycle mot = new Motorcycle(make, plate, brand, price);
+    //Motorcycle mot = new Motorcycle(make, plate, brand, price);
 
     //G e t t e r    a n d   S e t t e r
 
@@ -56,7 +55,7 @@ public class FullTIme extends Employee implements IPrintable{
         this.color = color;
     }
 
-    public byte getSeats() {
+    public int getSeats() {
         return seats;
     }
 
@@ -80,25 +79,24 @@ public class FullTIme extends Employee implements IPrintable{
         this.price = price;
     }
 
-    public Car getCar() {
+    /**public Car getCar() {
         return car;
     }
-
-   /** public void setCar(int mak, String plat, String colo, byte seat) {
+     **/
+   public void setCar(int mak, String plat, String colo, int seat) {
         this.make = mak;
         this.plate = plat;
         this.color = colo;
         this.seats = seat;
-    }**/
-
-
-    public Motorcycle getMot() {
-        return mot;
+    }
+    public void setMotorcycle(int mak, String plat, String brand, int price) {
+        this.make = mak;
+        this.plate = plat;
+        this.brand = brand;
+        this.price = price;
     }
 
-    public void setMot(Motorcycle mot) {
-        this.mot = mot;
-    }
+
 
     // O v e r w r i t i n g    m e t h o d   o f   p a r e n t   c l a s s
 
@@ -108,21 +106,28 @@ public class FullTIme extends Employee implements IPrintable{
         return super.getEarnings();
 
     }
-    Car car = new Car(make, plate, color, seats);
 
     @Override
 
-
     public void printMyData() {
         super.printMyData();
+
         System.out.println("Employee is a Full Time Employee");
         System.out.println("Base Salary: " +salary);
         System.out.println("Bonus      : " +bonus);
         System.out.println("Earnings   : " +getEarnings());
-        if(car.getPlate() == null) {
+        Motorcycle motorcycle = new Motorcycle(make, plate, brand, price);
+        Car car = new Car(make, plate, color, seats);
+        if(car.getColor()!=null) {
             System.out.println("Employee has a car");
             car.printMyData();
+            System.out.println("=========================");
         }
-
+        else if(motorcycle.getBrand()!=null)
+        {
+            System.out.println("Employee has a motorcycle");
+            motorcycle.printMyData();
+            System.out.println("=========================");
+        }
     }
 }

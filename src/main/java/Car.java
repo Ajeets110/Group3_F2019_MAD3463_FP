@@ -2,29 +2,30 @@ public class Car extends Vehicle implements IPrintable {
 
     // Car's Additional Variable
 
-private String  Color;
-private byte NumberOfSeats;
+private String  color;
+private int NumberOfSeats;
+int make;
+String plate;
 
-
-    public Car(int make, String plate, String color, byte numberOfSeats) {
-        super.setMake(make);
-        super.setPlate(plate);
-        Color = color;
-        NumberOfSeats = numberOfSeats;
+    public Car(int make, String plate, String color, int numberOfSeat) {
+        this.make = make;
+        this.plate = plate;
+        this.color = color;
+        NumberOfSeats = numberOfSeat;
     }
 
 // Getters and setters
 
 
     public String getColor() {
-        return Color;
+        return color;
     }
 
     public void setColor(String color) {
-        Color = color;
+        this.color = color;
     }
 
-    public byte getNumberOfSeats() {
+    public int getNumberOfSeats() {
         return NumberOfSeats;
     }
 
@@ -34,9 +35,9 @@ private byte NumberOfSeats;
 
     @Override
     public void printMyData() {
-        System.out.println("Make               : " + super.getMake());
-        System.out.println("Plate              : " + super.getPlate());
-        System.out.println("Color              : " + Color );
+        System.out.println("Make               : " + make);
+        System.out.println("Plate              : " + plate);
+        System.out.println("Color              : " + color );
         System.out.println("Number Of Seats    : " + NumberOfSeats);
     }
 
